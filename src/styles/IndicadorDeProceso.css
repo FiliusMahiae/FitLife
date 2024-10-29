@@ -1,0 +1,23 @@
+.indicador-proceso {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.paso {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #666;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.paso.activo {
+    background-color: #4caf50;
+    color: #fff;
+}
