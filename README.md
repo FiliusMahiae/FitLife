@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# FitLife - Formulario de Registro
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Desarrollado por Sergio Mahía INSO 2A
 
-## Available Scripts
+### Descripción
 
-In the project directory, you can run:
+**FitLife** es una aplicación de formulario de registro para un gimnasio, desarrollada con **React**. La aplicación guía al usuario a través de un proceso de registro en varias etapas, recopilando información personal, detalles de contacto, preferencias de entrenamiento y datos de pago.
 
-### `npm start`
+Cada sección es un componente de React que permite al usuario avanzar a la siguiente etapa mediante un botón "Siguiente". En la última etapa, un botón "Enviar Formulario" consolida y envía todos los datos ingresados.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Características
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Formulario dividido en etapas**: El formulario está organizado en secciones o etapas que los usuarios completan paso a paso.
+- **Validación en tiempo real**: Cada campo del formulario se valida a medida que el usuario escribe, mostrando mensajes de error si es necesario.
+- **Indicador de progreso**: Muestra el progreso del usuario a medida que avanza por las etapas del formulario.
+- **Diseño atractivo**: Estilizado con CSS para una experiencia de usuario moderna y sencilla.
 
-### `npm test`
+### Estructura del proyecto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+El proyecto está dividido en varios componentes de React:
 
-### `npm run build`
+- **App.js**: Componente principal que maneja el estado del formulario y el avance entre etapas.
+- **DatosPersonales**: Componente para capturar el nombre, email y teléfono del usuario.
+- **InformacionDeContacto**: Componente para capturar la dirección, ciudad y código postal.
+- **PreferenciasEntrenamiento**: Componente para seleccionar el tipo de entrenamiento, objetivos y disponibilidad.
+- **MetodoDePago**: Componente para ingresar los datos de tarjeta de crédito.
+- **IndicadorDeProceso**: Componente que muestra el progreso visual de las etapas del formulario.
+- **EnviarFormulario**: Botón final para enviar todos los datos del formulario en la última etapa.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Tecnologías utilizadas
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **React** - Librería principal para construir la interfaz de usuario.
+- **React Hook Form** - Manejo de formularios y validación de campos.
+- **CSS3** - Para el estilizado del formulario y los componentes.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+¡Gracias por revisar FitLife! Este proyecto está diseñado para ayudar a nuevos usuarios a registrarse de manera fácil y guiada en un gimnasio, siguiendo un flujo intuitivo de varias etapas.
