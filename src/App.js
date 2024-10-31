@@ -9,6 +9,7 @@ import IndicadorDeProceso from './components/IndicadorDeProceso';
 
 function App() {
   const [currentStep, setCurrentStep] = useState(1);
+  const [incorrectFectch, setIncorrectFectch] = useState(false);
   const [formData, setFormData] = useState({
     datosPersonales: {},
     informacionContacto: {},
@@ -42,6 +43,7 @@ function App() {
       }
     } catch {
       console.log('Error al registrar');
+      setIncorrectFectch(true);
     }
   }
 
@@ -55,6 +57,7 @@ function App() {
       {currentStep === 3 && <PreferenciasEntrenamiento sendData={(data) => handleSectionData('preferenciasEntrenamiento', data)} />}
       {currentStep === 4 && <MetodoDePago sendData={(data) => handleSectionData('metodoPago', data)} />}
       {currentStep === 5 && <EnviarFormulario sendData={enviarDatosAPI} />}
+      {incorrectFectch && <p style={{ color: 'red' , padding: '10px', textAlign: 'center'}}>Error al enviar los datos</p>}
     </div>
   );
 }
